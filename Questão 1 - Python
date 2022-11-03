@@ -2,5 +2,9 @@ print("------Calcular area do trapézio-----")
 bmenor=float(input("Digite a base menor:"))
 bmaior=float(input("Digite a base maior:"))
 a=float(input("Informe a altura:"))
-area=((bmaior+bmenor)*a)/2
-print("Area é: ",area)
+
+def calcTrapezio(x,c,d):
+    area=((x+c)*d)/2
+    return print("Area é: ",area)
+
+calcTrapezio(bmaior,bmenor,a)
