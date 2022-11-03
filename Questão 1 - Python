@@ -1,0 +1,6 @@
+print("------Calcular area do trapézio-----")
+bmenor=float(input("Digite a base menor:"))
+bmaior=float(input("Digite a base maior:"))
+a=float(input("Informe a altura:"))
+area=((bmaior+bmenor)*a)/2
+print("Area é: ",area)
