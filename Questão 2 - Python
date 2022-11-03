@@ -3,7 +3,7 @@ def soma_imposto(taxa,custo):
     custo+=custo*taxa_imposto
     return print("Preço: ",custo)
     
-a=float(input("Digite ovalor do produto: "))
+a=float(input("Digite o valor do produto: "))
 b=float(input("Digite a taxa: "))
 
 soma_imposto(b,a)
