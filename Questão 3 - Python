@@ -1,0 +1,17 @@
+def converter(h,m):
+    a="AM"
+    p="PM"
+    if(h>12):
+        h-=12
+        return print(h,":",m,p)
+    else:
+        return print(h,":",m,a)
+hora=0
+
+while(hora>-1):
+    hora=int(input("Digite a hora ou -1 para sair:"))
+    if(hora<0):
+        print("Obrigado")
+        break
+    minutos=int(input("Minuto:"))
+    converter(hora,minutos)
