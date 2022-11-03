@@ -15,3 +15,25 @@ while(hora>-1):
         break
     minutos=int(input("Minuto:"))
     converter(hora,minutos)
+    
+    //
+    
+    import math
+
+def converter(horaNova):
+    horaNova=float(horaNova.replace(':','.'))
+    if(horaNova>12.59):
+        horaNova-=12
+        hora=str(horaNova)
+        print("Hora:",hora.replace('.',':'),"PM")
+    else:
+        hora=str(horaNova)
+        print("Hora: ",hora.replace('.',':'),"AM")
+
+hora=1  
+while(hora!=-1):
+    hora=input("Hora:")
+    if(hora=="-1"):
+        print("Obrigado")
+        break
+    converter(hora)
