@@ -1,13 +1,16 @@
+def imprimir(h,m,t):
+    return print(h,":",m,t)
+
 def converter(h,m):
     a="AM"
     p="PM"
     if(h>12):
         h-=12
-        return print(h,":",m,p)
+        return imprimir(h,m,p)
     else:
-        return print(h,":",m,a)
+        return imprimir(h,m,a)
+        
 hora=0
-
 while(hora>-1):
     hora=int(input("Digite a hora ou -1 para sair:"))
     if(hora<0):
@@ -15,25 +18,3 @@ while(hora>-1):
         break
     minutos=int(input("Minuto:"))
     converter(hora,minutos)
-    
-    //
-    
-    import math
-
-def converter(horaNova):
-    horaNova=float(horaNova.replace(':','.'))
-    if(horaNova>12.59):
-        horaNova-=12
-        hora=str(horaNova)
-        print("Hora:",hora.replace('.',':'),"PM")
-    else:
-        hora=str(horaNova)
-        print("Hora: ",hora.replace('.',':'),"AM")
-
-hora=1  
-while(hora!=-1):
-    hora=input("Hora:")
-    if(hora=="-1"):
-        print("Obrigado")
-        break
-    converter(hora)
